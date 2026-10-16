@@ -1,0 +1,25 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/ArraysAreEqualTest.java",
+      "testCases": [
+        {
+          "methodName": "equalTest1",
+          "label": "Returns true when arrays are identical",
+          "description": "Verifies that equal(...) returns true when both input arrays contain the same elements in the same order."
+        },
+        {
+          "methodName": "equalTest2",
+          "label": "Detects unequal arrays with different repeated values",
+          "description": "Checks that equal(...) returns false when one array contains repeated 4s and the other is [0,1,2,3,4]."
+        },
+        {
+          "methodName": "equalTest3",
+          "label": "Detects unequal arrays with a single differing element",
+          "description": "Ensures that equal(...) returns false when arrays differ by only the last element."
+        }
+      ]
+    }
+  ]
+}
