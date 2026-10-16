@@ -15,6 +15,30 @@ public class ArraysAreEqual {
      * @return true if the values of a are equal to the values of b.
      */
     public boolean equal(int[] a, int[] b){
-        return false;
+        {
+            // If both references are null, they are considered equal
+            if (a == null && b == null) {
+                return true;
+            }
+            
+            // If one is null and the other is not, they are not equal
+            if (a == null || b == null) {
+                return false;
+            }
+            
+            // If lengths differ, they cannot be equal
+            if (a.length != b.length) {
+                return false;
+            }
+            
+            // Check each element value
+            for (int i = 0; i < a.length; i++) {
+                if (a[i] != b[i]) {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
     }
 }
